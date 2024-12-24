@@ -151,7 +151,7 @@
     }
 }
 @media only screen and (max-width: 1620px) {
- .noel-right {
+    .noel-right {
         right: -15px;
     }
 }
@@ -172,10 +172,124 @@
 .noel-left {
     left: 0;
 }
- .noel-right {
+.noel-right {
     right: 0;
 }
 span img {
     max-width: 100%;
     height: auto;
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-icon {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.chat-box {
+    display: none;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    padding: 10px;
+    height: calc(100% - 128px);
+    overflow-y: auto;
+}
+
+.chat-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.chat-footer input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+}
+
+.chat-footer span {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    word-break: break-word;
+    max-width: fit-content;
+}
+
+.message.user {
+    margin: 5px 0;
+    background-color: var(--color-primary);
+    align-self: flex-end;
+    text-align: right;
+    color: #fff;
+}
+
+.message.reply {
+    background-color: #f3f4f6;
+    align-self: flex-start;
+    text-align: left;
+}
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dot {
+    animation: blink 1s infinite;
+    font-size: 24px;
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
