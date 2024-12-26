@@ -196,6 +196,10 @@ span img {
 }
 
 .chat-box {
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    position: absolute;
     display: none;
     width: 400px;
     height: 600px;
@@ -245,14 +249,19 @@ span img {
     margin-left: 5px;
 }
 
-.close-chat {
-    background: none;
+.close-chat,
+.reset-chat {
+    font-weight: bold;
+    border-radius: 6px;
     border: none;
     color: #fff;
+    padding: 6px 12px;
+    background-color: #ffffff30;
     cursor: pointer;
 }
 
-.message {
+.message,
+.question-button {
     padding: 10px;
     border-radius: 10px;
     word-break: break-word;
@@ -267,12 +276,14 @@ span img {
     color: #fff;
 }
 
-.message.reply {
+.message.reply,
+.question-button {
     background-color: #f3f4f6;
     align-self: flex-start;
     text-align: left;
 }
-.chat-body {
+.chat-body,
+.chat-questions {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -292,4 +303,68 @@ span img {
     100% {
         opacity: 0;
     }
+}
+
+.chat-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+.question-button {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.new-year-left {
+    left: 0;
+    top: 0;
+}
+.new-year-snake-left {
+    left: calc((100vw - 1200px) / 2 - 356px);
+}
+.new-year-snake-right {
+    right: calc((100vw - 1200px) / 2 - 356px);
+}
+.new-year-right {
+    right: 0;
+}
+.new-year-header {
+    z-index: 10 !important;
+    top: 0;
+}
+
+.new-year-body {
+    z-index: 2 !important;
+    top: -200px;
+}
+
+.motorbike {
+    left: calc(100% - 80px);
+    max-width: 70px;
+    position: absolute; 
+    top: -55px;
+    transform: scaleX(1);
+    animation: motorbikeAnimation 10s infinite ease-in-out;
+}
+@keyframes motorbikeAnimation {
+    0% {
+        left: 0;
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% - 80px);
+        transform: scaleX(1);
+    }
+    75% {
+        left: calc(100% - 80px);
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+}
+#chat-view .w-full.flex.items-center.justify-center.px-4.flex-row.py-1{
+    visibility: collapse !important;
 }

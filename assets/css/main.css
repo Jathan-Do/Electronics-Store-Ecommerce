@@ -3042,7 +3042,7 @@ h6 {
 
 .header {
   position: relative;
-  z-index: 3;
+  z-index: 10;
 }
 @media (max-width: 1199px) {
   .header .add {

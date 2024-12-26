@@ -38,6 +38,12 @@
                 width: 100%;
             }
         </style>
+<!-- Start EasyChatGPT -->
+<script src="https://widget.easychatgpt.io/dist/widget/main.js"></script>
+<script>window.EasyChatGPT.init({"handle":"dienmaydangnho2vercelapp"})</script>
+<!-- End EasyChatGPT -->
+
+
     </head>
 
     <body>
@@ -356,9 +362,11 @@
                 <!-- hero end -->
 
                 <!-- feature start -->
-                <div class="feature pt-40 pb-30">
+                <div class="feature pt-40 pb-30 position-relative">
                     <div class="container">
-                        <div class="feature__wrap ul_li">
+                        
+                        <div class="feature__wrap ul_li position-relative bg-white" style="z-index: 5;">
+                            <img src="//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/tet/dmx/2025/motorbike.png" width="70" height="58" class="motorbike">
                             <div class="feature__item ul_li">
                                 <div class="icon">
                                     <img src="assets/img/icon/feat_02.svg" alt="" />
@@ -397,6 +405,19 @@
                             </div>
                         </div>
                     </div>
+                    <!-- new-year -->
+                    <span class="new-year-body new-year-snake-right position-absolute">
+                        <img
+                            src="//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/tet/dmx/2025/bg-main-dt-right.png"
+                            width="470"
+                            height="1004"
+                            class="snake-right"
+                        />
+                    </span>
+                    <span class="new-year-body new-year-snake-left position-absolute">
+                        <img src="/assets/img/bg-main-dt-left.png" width="400" height="1004" class="snake-left" />
+                    </span>
+                    <!-- end-new-year -->
                 </div>
                 <!-- feature end -->
 
@@ -5325,29 +5346,43 @@
             <!-- end newsletter-popup-area-section -->
 
             <!-- bot chat -->
-            <div class="chat-container">
+            <!-- <div class="chat-container">
                 <div id="chat-icon" class="chat-icon">💬</div>
                 <div id="chat-box" class="chat-box">
                     <div class="chat-header">
-                        <span class="text-white fw-bold fs-3"
-                            ><img src="assets/img/logo/logo.svg" alt="" style="width: 100px" />Điện máy Đăng Nho 2</span
+                        <span class="text-white fw-bold fs-3">
+                            <img src="assets/img/logo/logo.svg" alt="" style="width: 100px" />Điện máy Đăng Nho 2
+                        </span>
+                        <span
+                            ><button id="reset-chat" class="reset-chat">⟲</button>
+                            <button id="close-chat" class="close-chat">✖</button></span
                         >
-                        <button id="close-chat" class="close-chat">✖</button>
                     </div>
                     <div class="chat-body">
-                        <div class="message reply"><img src="assets/img/logo/logo.svg" alt="" style="width: 100px" />Chào bạn, tôi là trợ lí ảo của Điện máy Đăng Nho 2.</div>
-                        <div class="message reply"><img src="assets/img/logo/logo.svg" alt="" style="width: 100px" />Tôi rất sẵn lòng hỗ trợ bạn.</div>
+                        <div class="message reply">
+                            <img src="assets/img/logo/logo.svg" alt="" style="width: 100px" />Chào bạn, tôi là trợ lí ảo của Điện máy Đăng
+                            Nho 2.
+                        </div>
+                        <div class="message reply">
+                            <img src="assets/img/logo/logo.svg" alt="" style="width: 100px" />Tôi rất sẵn lòng hỗ trợ bạn 😊.
+                        </div>
+                        <div class="chat-questions">
+                            <div class="question-button" data-answer="Câu trả lời mẫu 1?">Câu hỏi mẫu 1?</div>
+                            <div class="question-button" data-answer="Câu trả lời mẫu 2?">Câu hỏi mẫu 2?</div>
+                            <div class="question-button" data-answer="Câu trả lời mẫu 3?">Câu hỏi mẫu 3?</div>
+                        </div>
                     </div>
                     <div class="chat-footer">
                         <div class="d-flex w-100" style="border: 1px solid #ccc; border-radius: 10px">
                             <input type="text" id="chat-input" placeholder="Nhập tin nhắn..." />
-                            <span id="send-chat" class="send-chat"
-                                ><i style="color: var(--color-primary); font-size: 24px" class="ti ti-send-2"></i
-                            ></span>
+                            <span id="send-chat" class="send-chat">
+                                <i style="color: var(--color-primary); font-size: 24px" class="ti ti-send-2"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
             <!-- end bot chat -->
             <!-- contact -->
             <div id="button-contact-vr" class="">
@@ -5387,7 +5422,7 @@
             </div>
             <!-- end contact -->
             <!-- noel -->
-            <span class="position-fixed z-3">
+            <!-- <span class="position-fixed z-3">
                 <img
                     src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/FE/img/noel-left-24.png"
                     width="263"
@@ -5405,8 +5440,27 @@
                     class="noel-right loading"
                     alt="banner noel right"
                     data-was-processed="true"
-            /></span>
-             <!-- end noel -->
+            /></span> -->
+            <!-- end noel -->
+
+            <!-- new-year-header -->
+            <span class="new-year-header new-year-left position-fixed">
+                <img
+                    src="https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/tet/dmx/2025/header-left.png"
+                    width="288"
+                    height="162"
+                    class="header-left"
+                />
+            </span>
+            <span class="new-year-header new-year-right position-fixed">
+                <img
+                    src="https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/tet/dmx/2025/header-right.png"
+                    width="288"
+                    height="162"
+                    class="header-right"
+                />
+            </span>
+            <!-- end-new-year-header -->
         </div>
 
         <!-- jquery include -->
@@ -5429,7 +5483,7 @@
         <script>
             AOS.init();
         </script>
-        <script src="assets/js/snow.js"></script>
+        <!-- <script src="assets/js/snow.js"></script> -->
         <script src="assets/js/boxChat.js"></script>
     </body>
 </html>
