@@ -14102,8 +14102,8 @@ abbr[title] {
 /* backtoup */
 .progress-wrap {
   position: fixed;
-  right: 30px;
-  bottom: 40px;
+  right: 36px;
+  bottom: 130px;
   height: 35px;
   width: 35px;
   cursor: pointer;
