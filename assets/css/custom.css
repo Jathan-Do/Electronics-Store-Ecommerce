@@ -536,13 +536,16 @@ span img {
         flex-direction: column;
         margin-top: 12px;
     }
-    .feature__item h3,
+
     .hero__height h2,
     .tab-product h2,
     .rd-slide-product .product-category h2,
     .rd-slide-products h2,
     .product-cat .section-heading,
     .recent-product .container .row .product__nav-wrap h2 {
+        font-size: 20px;
+    }
+    .feature__item h3 {
         font-size: 20px !important;
     }
     .recent-product .container .row .product__nav-wrap .recent-product__nav {
@@ -556,10 +559,13 @@ span img {
         overflow-x: clip;
         padding: 0;
     }
-    .feature__item p,
+
     .tab-product .product__nav-wrap .product__nav .nav-link,
     .rd-slide-product .product-category .list-unstyled a,
     .recent-product .container .row .product__nav-wrap .product__nav .nav-link {
+        font-size: 18px;
+    }
+    .feature__item p {
         font-size: 18px !important;
     }
     .add-banner__img {
@@ -568,7 +574,7 @@ span img {
     .vd-banner .container .row {
         gap: 8px;
     }
-    .feature__item p{
+    .feature__item p {
         margin-bottom: 0;
     }
 }
