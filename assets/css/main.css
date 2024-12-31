@@ -609,7 +609,6 @@ main {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--color-border);
   text-transform: capitalize;
-  padding: 20px 30px;
 }
 .section-heading.fs-20 {
   font-size: 20px;
