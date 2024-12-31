@@ -1,3 +1,6 @@
+.container {
+    padding: 0 !important;
+}
 .come-here:hover {
     cursor: pointer;
     background-color: var(--color-primary);
@@ -318,13 +321,12 @@ span img {
 
 .new-year-left {
     left: 0;
-    top: 0;
 }
 .new-year-snake-left {
-    left: calc((100vw - 1200px) / 2 - 356px);
+    left: calc((100vw - 1200px) / 2 - 468px);
 }
 .new-year-snake-right {
-    right: calc((100vw - 1200px) / 2 - 356px);
+    right: calc((100vw - 1200px) / 2 - 540px);
 }
 .new-year-right {
     right: 0;
@@ -336,13 +338,15 @@ span img {
 
 .new-year-body {
     z-index: 2 !important;
-    top: -200px;
+    top: -224px;
 }
-
+.new-year-body.new-year-snake-right {
+    top: -280px !important;
+}
 .motorbike {
     left: calc(100% - 80px);
     max-width: 70px;
-    position: absolute; 
+    position: absolute;
     top: -55px;
     transform: scaleX(1);
     animation: motorbikeAnimation 10s infinite ease-in-out;
@@ -365,6 +369,22 @@ span img {
         transform: scaleX(-1);
     }
 }
-#chat-view .w-full.flex.items-center.justify-center.px-4.flex-row.py-1{
-    visibility: collapse !important;
+
+@media only screen and (max-width: 1700px) {
+    .new-year-header .header-left,
+    .new-year-header .header-right {
+        height: auto;
+        width: calc((100vw - 1200px) / 2);
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .new-year-header .header-left,
+    .new-year-header .header-right {
+        display: none;
+    }
+}
+.new-year-banner-body {
+    position: absolute;
+    top: -94px;
+    right: 80px;
 }
