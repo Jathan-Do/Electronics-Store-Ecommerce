@@ -414,23 +414,26 @@ span img {
     animation-iteration-count: infinite, infinite;
     animation-play-state: running, running;
 }
+
+.snowflake.snowflake3 {
+    font-size: 22px;
+    color: rgb(244 7 91);
+}
 .snowflake:first-of-type {
     left: 10%;
     animation-delay: 1s, 1s;
-}
-.snowflake.snowflake3 {
-    color: rgb(244 7 91);
-}
-.snowflake:nth-of-type(4) {
-    left: 40%;
-    animation-delay: 2s, 2s;
 }
 .snowflake:nth-of-type(2) {
     left: 15%;
     animation-delay: 2s, 1.5s;
 }
-.snowflake.snowflake3 {
-    font-size: 22px;
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    animation-delay: 2s, 1.5s;
+}
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    animation-delay: 2s, 2s;
 }
 .snowflake:nth-of-type(5) {
     left: 50%;
@@ -458,6 +461,10 @@ span img {
 }
 .snowflake:nth-of-type(11) {
     left: 65%;
+    animation-delay: 4s, 2.5s;
+}
+.snowflake:nth-of-type(12) {
+    left: 20%;
     animation-delay: 4s, 2.5s;
 }
 @keyframes snowflakes-fall {
@@ -577,4 +584,8 @@ span img {
     .feature__item p {
         margin-bottom: 0;
     }
+}
+
+.tawk-card.tawk-footer > div:first-child {
+    display: none !important;
 }
